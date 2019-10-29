@@ -1,7 +1,6 @@
 Rails.application.routes.draw do
   resources :songs
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
-
   get '/songs', to: 'songs#index'
   get '/songs/new', to: 'songs#new', as: 'new_song'
   post '/songs', to: 'songs#create'
